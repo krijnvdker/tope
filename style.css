@@ -1160,7 +1160,7 @@ body.stretched #header.full-header .container {
 	display: block;
 	line-height: 22px;
 	padding: 39px 15px;
-	color: #772900;
+	color: #037840;
 	font-weight: bold;
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -1189,7 +1189,7 @@ body.stretched #header.full-header .container {
 }
 
 #primary-menu ul li:hover > a,
-#primary-menu ul li.current > a { color: #FC8622; }
+#primary-menu ul li.current > a { color: #221F20; }
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
