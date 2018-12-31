@@ -1469,6 +1469,7 @@ var SEMICOLON = SEMICOLON || {};
 					$sliderParallaxEl.find('.slider-parallax-inner').width( parallaxElWidth );
 				}
 
+
 				if( !$body.hasClass('stretched') ) {
 					parallaxElWidth = $wrapper.outerWidth();
 					$sliderParallaxEl.find('.slider-parallax-inner').width( parallaxElWidth );
@@ -2279,15 +2280,15 @@ var SEMICOLON = SEMICOLON || {};
 						elementVideo.css({ 'top': '', 'left': -( ( videoWidth - divWidth )/2 )+'px' });
 					}
 
-					if( SEMICOLON.isMobile.any() && !element.hasClass('no-placeholder') ) {
-						var placeholderImg = elementVideo.attr('poster');
+					// if( SEMICOLON.isMobile.any() && !element.hasClass('no-placeholder') ) {
+					// 	var placeholderImg = elementVideo.attr('poster');
 
-						if( placeholderImg != '' ) {
-							element.append('<div class="video-placeholder" style="background-image: url('+ placeholderImg +');"></div>')
-						}
+					// 	if( placeholderImg != '' ) {
+					// 		element.append('<div class="video-placeholder" style="background-image: url('+ placeholderImg +');"></div>')
+					// 	}
 
-						elementVideo.hide();
-					}
+					// 	elementVideo.hide();
+					// }
 				});
 			}
 		},

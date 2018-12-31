@@ -1055,8 +1055,8 @@ body.stretched #header.full-header .container {
 
 #logo img {
 	display: block;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	max-width: 100%;
 }
 
@@ -13766,6 +13766,12 @@ body:not(.no-transition) #wrapper,
 
 footer a{
 	color: white;
+}
+
+@media screen and (max-width: 540px){
+	#slider h2{
+		font-size: 35px!important;
+	}
 }
 
 
