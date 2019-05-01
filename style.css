@@ -644,7 +644,8 @@ body.stretched .container-fullwidth {
 .col_five_sixth {
 	display: block;
 	position: relative;
-	margin-right: 4%;
+	margin-left: 1%;
+	margin-right: 1%;
 	margin-bottom: 50px;
 	float: left;
 }

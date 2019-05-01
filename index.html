@@ -45,8 +45,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/zelf/transparent-dark.png"><img src="images/zelf/logo1.png" alt="Top E Toernooi Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/zelf/transparent-dark.png"><img src="images/zelf/logo1.png" alt="Top E Toernooi Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="images/zelf/transparent-dark.png"><img src="images/zelf/Toernooi.png" alt="Top E Toernooi Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/zelf/transparent-dark.png"><img src="images/zelf/Toernooi.png" alt="Top E Toernooi Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -56,8 +56,9 @@
 						<ul>
 							<li class="current"><a href="index.html"><div>Home</div></a></li>
 							<li><a href="nieuws.html"><div>Nieuws</div></a></li>
-							<li><a href="tournooi-info.html"><div>Tournooi info</div></a></li>
+							<li><a href="tournooi-info.html"><div>Toernooi info</div></a></li>
 							<li><a href="deelnemers.html"><div>Deelnemers</div></a></li>
+							<li><a href="sponsoren.html"><div>Sponsoren</div></a></li>
 							<li><a href="contact.html"><div>Contact</div></a></li>
 						</ul>
 
@@ -78,6 +79,39 @@
 					<div class="slider-caption slider-caption-center">
 						<h2 data-animate="fadeInUp">Jorrit Hendrix U11 Tournament</h2>
 						<a data-animate="fadeInUp" data-delay="400" href="#begin" class="button button-border button-light button-rounded button-large noleftmargin nobottommargin d-none d-md-inline-block" style="margin-top: 30px;">Lees verder</a>
+						<!-- Display the countdown timer in an element -->
+						<h2 style="font-size: 50px; margin-top: 50px;">Nog:</h2><h2 style="font-size: 50px;" id="demo"></h2>
+
+						<script>
+						// Set the date we're counting down to
+						var countDownDate = new Date("Jun 8, 2019 15:00:00").getTime();
+
+						// Update the count down every 1 second
+						var x = setInterval(function() {
+
+						// Get todays date and time
+						var now = new Date().getTime();
+
+						// Find the distance between now and the count down date
+						var distance = countDownDate - now;
+
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+						// Display the result in the element with id="demo"
+						document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+						+ minutes + "m " + seconds + "s ";
+
+						// If the count down is finished, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+							document.getElementById("demo").innerHTML = "EXPIRED";
+						}
+						}, 1000);
+						</script>
 					</div>
 				</div>
 				<div class="video-wrap">
@@ -161,75 +195,108 @@
 						<h2>Deelnemers</h2>
 					</div>
 
-					<div class="col_full clearfix">
-
-						<div class="masonry-thumbs grid-4" data-big="4" data-lightbox="gallery">
-							<a href="images/zelf/ajax-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/ajax-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/anderlecht-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/anderlecht-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/az-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/az-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/clubbrugge-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/clubbrugge-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/feyenoord-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/feyenoord-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/gladback-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/gladback-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/psv-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/psv-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/schalke-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/schalke-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/svpanningen-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/svpanningen-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/vvv-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/vvv-logo.jpg" alt="Gallery Thumb 1"></a>
-							<a href="images/zelf/aberdeen-logo.jpg" data-lightbox="gallery-item"><img class="image_fade" src="images/zelf/aberdeen-logo.jpg" alt="Gallery Thumb 1"></a>
-						</div>
-
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/ajax-logo.jpg" alt="Gallery Thumb 1"></a>
 					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/anderlecht-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/az-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/clubbrugge-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/feyenoord-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/gladback-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/psv-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/schalke-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/svpanningen-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/vvv-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/aberdeen-logo.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="col_one_fourth">
+						<a href="deelnemers.html"><img src="images/zelf/altinordu.jpg" alt="Gallery Thumb 1"></a>
+					</div>
+
+					<div class="clear"></div>
 
 					<div class="fancy-title title-bottom-border">
-						<h2>Sponsoren</h2>
+						<h2>Partners</h2>
 					</div>
 
-					<div id="oc-images" class="owl-carousel image-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-lg="4" data-items-xl="5">
+					<div id="oc-images" class="owl-carousel image-carousel carousel-widget" data-loop="true" data-autoplay="2000" data-margin="20" data-nav="true" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-lg="4" data-items-xl="5">
 
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/john-blankenstein-foundation.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/NKS.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/partner-toptoernooien-vvv.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/topsport-limburg.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="https://svpanningen.nl/" target="_blank"><img src="images/zelf/svpanningen-partner.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/john-blankenstein-foundation.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/NKS.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/partner-toptoernooien-vvv.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/topsport-limburg.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="https://svpanningen.nl/" target="_blank"><img src="images/zelf/svpanningen-partner.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/john-blankenstein-foundation.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/NKS.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/partner-toptoernooien-vvv.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="#"><img src="images/zelf/topsport-limburg.jpg" alt="Image 1"></a>
 						</div>
 						<div class="oc-item">
-							<a href="#"><img src="images/zelf/bodyandbrains-logo.png" alt="Image 1"></a>
+							<a href="https://svpanningen.nl/" target="_blank"><img src="images/zelf/svpanningen-partner.jpg" alt="Image 1"></a>
 						</div>
+						
 
 					</div>
 
@@ -267,8 +334,8 @@
                                         Wilhelminastraat 11<br>
 										Panningen, 5981 XW<br>
 									</address>
-									<abbr title="Phone Number"><strong>Telefoon:</strong></abbr> +31 77 307 43 94<br>
-									<abbr title="Email Address"><strong>Email:</strong></abbr> info@tope.nl
+									<abbr title="Phone Number"><strong>Telefoon:</strong></abbr>  <br>
+									<abbr title="Email Address"><strong>Email:</strong></abbr> topetoernooi@svpanningen.nl
 								</div>
 
 							</div>
@@ -290,7 +357,13 @@
 									</a>
 									<a href="https://www.facebook.com/topetoernooi/"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
 								</div>
-
+								<div class="col-lg-6 clearfix bottommargin-sm">
+									<a href="https://twitter.com/topetoernooi" class="social-icon si-dark si-colored si-twitter nobottommargin" style="margin-right: 10px;">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="https://twitter.com/topetoernooi"><small style="display: block; margin-top: 3px;"><strong>Follow us</strong><br>on Twitter</small></a>
+								</div>
 							</div>
 
 						</div>
@@ -318,11 +391,15 @@
 								<i class="icon-facebook"></i>
 								<i class="icon-facebook"></i>
 							</a>
+							<a href="https://twitter.com/topetoernooi" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
 						</div>
 
 						<div class="clear"></div>
 
-						<i class="icon-envelope2"></i> info@tope.nl <span class="middot">&middot;</span> <i class="icon-headphones"></i> +31 77 307 43 94 <span class="middot">&middot;</span>
+						<i class="icon-envelope2"></i> topetoernooi@svpanningen.nl <span class="middot">&middot;</span> <i class="icon-headphones"></i>   <span class="middot">&middot;</span>
 					</div>
 
 				</div>
